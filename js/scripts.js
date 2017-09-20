@@ -5,10 +5,12 @@ $(document).ready(function() {
   
     var x = 1;
     $(add_button).click(function(e){
-        e.preventDefault();
-        if(x < max_fields){
-            x++;
-            $(wrapper).append('<div><input type="text" name="mytext[]"/><a href="#" class="delete">Delete</a></div>'); //add input box
+       var latlon1 = document.getElementById('textbox_id').value;
+        
+        //e.preventDefault();
+        //if(x < max_fields){
+          //  x++;
+            //$(wrapper).append('<div><input type="text" name="mytext[]"/><a href="#" class="delete">Delete</a></div>'); //add input box
         }
   else
   {
