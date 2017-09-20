@@ -1,4 +1,4 @@
-var clipboard = new Clipboard('.btn');
+
 // Contents of an element
 var clipboard = new Clipboard('.btn', {
     target: function() {
