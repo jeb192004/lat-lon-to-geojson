@@ -1,5 +1,10 @@
 var clipboard = new Clipboard('.btn');
-
+// Contents of an element
+var clipboard = new Clipboard('.btn', {
+    target: function() {
+        return document.getElementById('textbox_id').value;
+    }
+});
 clipboard.on('success', function(e) {
     console.info('Action:', e.action);
     console.info('Text:', e.text);
