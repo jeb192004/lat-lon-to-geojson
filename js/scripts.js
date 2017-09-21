@@ -26,7 +26,7 @@ $(document).ready(function() {
   
     var x = 1;
     $(add_button).click(function(e){
-       var latlon1 = document.getElementById('textbox_id').select();
+       var latlon1 = document.getElementById('latlon1').select();
         document.execCommand('copy');
         //e.preventDefault();
         //if(x < max_fields){
