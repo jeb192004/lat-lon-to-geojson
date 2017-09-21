@@ -1,39 +1,32 @@
-.container1 input[type=text] {
-padding:5px 0px;
-margin:5px 5px 5px 0px;
+body {
+  font-family:Helvetica, Aria, sans-serif;
 }
 
-.add_form_field
-{
-    background-color: #1c97f3;
-    border: none;
-    color: white;
-    padding: 8px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
- border:1px solid #186dad;
+.header {
+  height: 80px;
+  background: #F8DA59
 }
 
-input{
-    border: 1px solid #1c97f3;
-    width: 260px;
-    height: 40px;
- margin-bottom:14px;
+.header img {
+  height: 100%  
 }
 
-.delete{
-    background-color: #fd1200;
-    border: none;
-    color: white;
-    padding: 5px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    margin: 4px 2px;
-    cursor: pointer;
+h1 {
+  font-size: 19px;
+}
+
+input[type="text"] {
+  padding: 5px;
+  font-size: 15px;
+  float: left
+}
+
+input[type="button"] {
+  border: 0px;
+  font-size: 12px;
+  padding: 8px;
+}
+
+.footer {
+  font-size: 11px
 }
