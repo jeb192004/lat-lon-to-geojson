@@ -7,16 +7,18 @@ document.getElementById("myform2").style.display='none';
 		var lat = cord[0];
 		var lon = cord[1];
 		var lonlat = lon+','+lat;
-		$(this).find('#myform').value = "";
-		$(this).find('#in2').value = "";
+		
         $('ul.list').append('<li>{ "type": "Feature", "properties": { "Name": "' +
 		val +'", "Description": "" }, "geometry": { "type": "Point", "coordinates":['+ lonlat + ',0.0 ] } }</li>');
-        e.preventDefault();
+        document.getElementById('in').value ="";
+		document.getElementById('in2').value = "";
+		e.preventDefault();
     });
 	$('#myform2').submit(function(e){
         var val = $(this).find('#in').val();
 		var val2 = $(this).find('#in2').val();
-	
+	document.getElementById('in').value ="";
+		document.getElementById('in2').value = "";
 		
         $('ul.list').append('<li>{ "type": "Feature", "properties": { "Name": "' +
 		val +'", "Description": "" }, "geometry": { "type": "Point", "coordinates":['+ val2 + ',0.0 ] } }</li>');
