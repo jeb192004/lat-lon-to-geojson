@@ -1,11 +1,19 @@
+
+
 .name_latlon input[type=text] {
 margin-left:2%;
 margin-right:2%;
+margin-top:5px;
 width:44%;
 border: 1px solid #1c97f3;
-
+font-size:24px;
 }
-
+.results{
+  margin-top:35px;
+  margin-left:2%;
+  margin-right:2%;
+  border: 1px solid #1c97f3;
+}
 #dwn-btn1 {
   background-color: #333;
     clear: both;
@@ -13,22 +21,32 @@ border: 1px solid #1c97f3;
     bottom:0;
 	left:0;
 	width:100%;
+	height:34px;
 	text-align:center;
 }
 #dwn-btn{
- 
+ margin-bottom:2px;
+ margin-top:2px;
+ font-size:18px;
+}
+#submit1{
+  width:100%;
 }
 #submit{
   
-  right:0;
+  float:right;
+ 
+  margin-top:2%;
+  margin-right:2%;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-  left:0;
+ 
+  width:100%;
     background-color: #333;
     overflow: hidden;
-	width:100%;
+	
 }
 
 /* Style the links inside the navigation bar */
