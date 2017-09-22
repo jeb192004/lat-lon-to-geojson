@@ -10,7 +10,7 @@ document.getElementById("myform2").style.display='none';
 		
         $('ul.list').append('<li>{ "type": "Feature", "properties": { "Name": "' +
 		val +'", "Description": "" }, "geometry": { "type": "Point", "coordinates":['+ lonlat + ',0.0 ] } }</li>');
-       
+       		
 		e.preventDefault();
     });
 	$('#myform2').submit(function(e){
