@@ -1,21 +1,43 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>JS Bin</title>
-</head>
-<body>
-  <div class="header">
-     <img src="http://www.jstips.co/images/jstips.png" alt="jstips">
-  </div>
-  <div class="content">
-    <h1>Copy to clipboard example doesnt work</h1>
-    <input type="text" id="visible-input" value="JS Tips Rocks!"/>
-    <input type="button" id="visible-button" value="Copy">
-  </div>
-  <p class="footer">Complete post <a href="http://www.jstips.co/en/copy-to-clipboard/" target="_blank">here</a>. jstips.co</p>
-  <script src="js/scripts.js"></script>
-</body>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/geojson.css">
+	<title>Create geojson</title>
+  </head>
+  <body>
+	<div class="topnav" id="myTopnav">
+	  <a onclick="lonlatFunction()">Lon/Lat</a>
+	  <a onclick="latlonFunction()">Lat/Lon</a>
+	</div>
+	<form id="myform2" action="whatever.php">
+	  <div class="name_latlon">
+		<input id="in" type="text" placeholder="Name" /><input id="in2" type="text" placeholder="lon/lat" />
+	  </div>
+
+	  <input type="button" id="dwn-btn" value="Create geojson file and download"/>
+	  <input id="submit" type="submit" />
+	</form>
+	<form id="myform" action="whatever.php">
+	  <div class="name_latlon">
+		<input id="in" type="text" placeholder="Name" /><input id="in2" type="text" placeholder="lat/lon" />
+		
+		</div>
+	  <input id="submit" type="submit" />
+	</form>
+
+	<div class="results">
+	  <ul class="list">
+	  </ul>
+	</div>
+	<div id="dwn-btn1">
+	  <input type="button" id="dwn-btn" value="Create geojson file and download"/>
+	</div>
+
+	<script src="js/geojson1.js"></script>
+
+  </body>
 </html>
