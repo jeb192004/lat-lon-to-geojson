@@ -7,7 +7,7 @@ document.getElementById("myform2").style.display='none';
 		var lat = cord[0];
 		var lon = cord[1];
 		var lonlat = lon+','+lat;
-		
+		 $('#in').val('');
         $('ul.list').append('<li>{ "type": "Feature", "properties": { "Name": "' +
 		val +'", "Description": "" }, "geometry": { "type": "Point", "coordinates":['+ lonlat + ',0.0 ] } }</li>');
        		
