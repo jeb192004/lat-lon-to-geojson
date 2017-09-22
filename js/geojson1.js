@@ -19,7 +19,8 @@ document.getElementById("myform2").style.display='none';
 		
         $('ul.list').append('<li>{ "type": "Feature", "properties": { "Name": "' +
 		val +'", "Description": "" }, "geometry": { "type": "Point", "coordinates":['+ val2 + ',0.0 ] } }</li>');
-       e.preventDefault();
+      document.getElementById("myform2").reset();
+		e.preventDefault();
     });
 	
 })(jQuery);
