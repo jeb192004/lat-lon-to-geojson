@@ -1,4 +1,7 @@
-
+body{
+	margin:0; padding:0;
+	
+}
 
 .name_latlon input[type=text] {
 margin-left:2%;
@@ -9,7 +12,7 @@ border: 1px solid #1c97f3;
 font-size:24px;
 }
 .results{
-  margin-top:35px;
+  margin-top:40px;
   margin-left:2%;
   margin-right:2%;
   border: 1px solid #1c97f3;
