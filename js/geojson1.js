@@ -15,15 +15,15 @@ document.getElementById("myform2").style.display='none';
     });
 (function($){
 	$('#myform2').submit(function(e){
-        var val = $(this).find('#in3').val();
-		var val2 = $(this).find('#in4').val();
+        var val = $(this).find('#in').val();
+		var val2 = $(this).find('#in2').val();
 		
         $('ul.list').append('<li>{ "type": "Feature", "properties": { "Name": "' +
 		val +'", "Description": "" }, "geometry": { "type": "Point", "coordinates":['+ val2 + ',0.0 ] } }</li>');
        e.preventDefault();
     });
-	document.getElementById("in3").value="";
-	        document.getElementById("in4").value="";
+	document.getElementById("in").value="";
+	        document.getElementById("in2").value="";
 })(jQuery);
 
 document.getElementById("dwn-btn").addEventListener("click", function(){
