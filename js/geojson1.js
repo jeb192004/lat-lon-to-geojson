@@ -21,8 +21,7 @@ document.getElementById("myform2").style.display='none';
 		val +'", "Description": "" }, "geometry": { "type": "Point", "coordinates":['+ val2 + ',0.0 ] } }</li>');
        e.preventDefault();
     });
-	document.getElementById("in").value="";
-	        document.getElementById("in2").value="";
+	
 })(jQuery);
 
 document.getElementById("dwn-btn").addEventListener("click", function(){
