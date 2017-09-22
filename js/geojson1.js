@@ -13,7 +13,6 @@ document.getElementById("myform2").style.display='none';
        		
 		e.preventDefault();
     });
-(function($){
 	$('#myform2').submit(function(e){
         var val = $(this).find('#in').val();
 		var val2 = $(this).find('#in2').val();
