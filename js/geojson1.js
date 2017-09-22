@@ -1,6 +1,5 @@
 document.getElementById("myform2").style.display='none';
-(function($){
-    $('#myform').submit(function(e){
+function submitForm1() {
         var val = $(this).find('#in').val();
 		var val2 = $(this).find('#in2').val();
 		var cord = val2.split(",");
@@ -12,18 +11,19 @@ document.getElementById("myform2").style.display='none';
 		val +'", "Description": "" }, "geometry": { "type": "Point", "coordinates":['+ lonlat + ',0.0 ] } }</li>');
        		
 		e.preventDefault();
-    });
-	$('#myform2').submit(function(e){
-        var val = $(this).find('#in').val();
-		var val2 = $(this).find('#in2').val();
+    })});
+function submitForm2() {
+	
+        var val = $(this).find('#in3').val();
+		var val2 = $(this).find('#in4').val();
 		
         $('ul.list').append('<li>{ "type": "Feature", "properties": { "Name": "' +
 		val +'", "Description": "" }, "geometry": { "type": "Point", "coordinates":['+ val2 + ',0.0 ] } }</li>');
        e.preventDefault();
     });
-	document.getElementById("in").value="";
-	        document.getElementById("in2").value="";
-})(jQuery);
+	document.getElementById("in3").value="";
+	        document.getElementById("in4").value="";
+});
 
 document.getElementById("dwn-btn").addEventListener("click", function(){
     // Generate download of hello.txt file with some content
