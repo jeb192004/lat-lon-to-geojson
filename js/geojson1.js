@@ -1,5 +1,6 @@
 document.getElementById("myform2").style.display='none';
-function submitForm1() {
+(function($){
+	$('#myform').submit(function(e){
         var val = $(this).find('#in').val();
 		var val2 = $(this).find('#in2').val();
 		var cord = val2.split(",");
@@ -11,9 +12,9 @@ function submitForm1() {
 		val +'", "Description": "" }, "geometry": { "type": "Point", "coordinates":['+ lonlat + ',0.0 ] } }</li>');
        		
 		e.preventDefault();
-    })});
-function submitForm2() {
-	
+    });
+(function($){
+	$('#myform2').submit(function(e){
         var val = $(this).find('#in3').val();
 		var val2 = $(this).find('#in4').val();
 		
@@ -23,7 +24,7 @@ function submitForm2() {
     });
 	document.getElementById("in3").value="";
 	        document.getElementById("in4").value="";
-});
+})(jQuery);
 
 document.getElementById("dwn-btn").addEventListener("click", function(){
     // Generate download of hello.txt file with some content
